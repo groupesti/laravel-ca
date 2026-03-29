@@ -70,7 +70,7 @@ class Lookup extends Model
         return $this->metadata[$key] ?? $default;
     }
 
-    public function is(string $slug): bool
+    public function isSlug(string $slug): bool
     {
         return $this->slug === $slug;
     }
